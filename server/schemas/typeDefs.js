@@ -1,7 +1,5 @@
-//import gql tagged template function
 const { gql } = require('apollo-server-express');
 
-//create typeDefs
 const typeDefs = gql`
   type User {
     _id: ID
@@ -27,6 +25,7 @@ const typeDefs = gql`
     createdAt: String
     username: String
   }
+
   type Auth {
     token: ID!
     user: User
